@@ -1,14 +1,22 @@
-#  🚰 `edinburgh`
+#  🧰 `sensors`
 
- **📦  edinburgh sensor controller [🦀 **Rust**](https://github.com/lar-rs/edinburgh)**
- ** Hardware [💵 **edinburgh **]() **
+ **📦  LAR sensors collection [🦀 **Rust**](https://github.com/lar-rs/sensors)**
 
 🚧 _Work In Progress_ 🚧
 
-[![travis build Status](https://travis-ci.com/greenhaus/edinburgh.svg?branch=master)](https://travis-ci.com/lar-rs/edinburgh)
-[![builds.sr.ht status](https://builds.sr.ht/~asmolkov/edinburgh/.build.yml.svg)](https://builds.sr.ht/~asmolkov/lar-rs/.build.yml?)
+[![travis build Status](https://travis-ci.com/lar-rs/sensors.svg?branch=master)](https://travis-ci.com/lar-rs/larsensors)
+[![builds.sr.ht status](https://builds.sr.ht/~asmolkov/sensors/.build.yml.svg)](https://builds.sr.ht/~asmolkov/lar-rs/sensors.build.yml?)
 [![open issue]][issue]
 ![Minimum Rust Version][min-rust-badge]
+
+
+## Project Description
+
+## Background
+
+## Software Documentation
+
+
 
 ## 🎙️ Commands
 
@@ -23,50 +31,31 @@
       Configure kopfmodul for user.
 
     ```
-    edinburgh setup
+    sensors setup
     ```
 
+<!-- links -->
+[file issues]: https://github.com/lar-rs/sensors/issues/
+[Rust]: https://www.rust-lang.org/
+[async-std]:https://docs.rs/async-std/0.99.10/async_std
 
-## 🔩 Building
+[edinburg]:https://edinburghsensors.com/products/oem-co2-sensor/gascard-ng/
 
-```rust
-use edinburgh::Edinburgh;
+[CONTRIBUTING.md]: CONTRIBUTING.md
 
-fn main() {
-    let mut edin = Edinburgh::open("/dev/ttyUSB0").unwrap();
-    println!("CO₂ readout: {} ppm", mhz19.read().unwrap());
-}
-```
-### raspberryPi
-To cross-compile for the Raspberry Pi you will need an
-`arm-unknown-linux-gnueabihf` GCC toolchain and Rust component installed. On
-Arch Linux I built [arm-linux-gnueabihf-gcc] from the AUR. Add the Rust target
-with `rustup target add arm-unknown-linux-gnueabihf`. Then you can
-cross-compile with `cargo`:
-
-    cargo build --release --target arm-unknown-linux-gnueabihf
-
-After it is built copy `target/arm-unknown-linux-gnueabihf/release/lca2019` to
-the Raspberry Pi.
-
-
-
-## ⚓ Installation
-
-1. Install `cargo`:
-
-    Edinburgh is installed through [Cargo](https://github.com/rust-lang/cargo#compiling-from-source), a Rust package manager. Rustup, a tool for installing Rust, will also install Cargo. On Linux and macOS systems, `rustup` can be installed as follows:
-
-    ```
-    curl https://sh.rustup.rs -sSf | sh
-    ```
-
-    Additional installation methods are available [here](https://forge.rust-lang.org/other-installation-methods.html).
-
-2. Install `edinburgh`:
-
-    ```
-    cargo install edinburgh
-    ```
-
-
+[CC-BY 4.0]: https://opendefinition.org/licenses/cc-by/
+[MIT]: https://opensource.org/licenses/MIT
+[The Rust Book]: https://doc.rust-lang.org/book/
+[building a command-line program]: https://doc.rust-lang.org/stable/book/ch12-00-an-io-project.html
+[building a multithreaded web server]: https://doc.rust-lang.org/stable/book/ch20-00-final-project-a-web-server.html
+[clippy]: https://github.com/rust-lang/rust-clippy/
+[criterion]: https://github.com/bheisler/criterion.rs
+[crossbeam]: https://github.com/crossbeam-rs/crossbeam
+[plan]: ./docs/lesson-plan.md
+[the roadmap]: ./docs/roadmap.md
+[post-project surveys]: ./docs/lesson-plan.md#user-content-making-pna-rust-better
+[pre]: ./docs/prerequisites.md
+[rustfmt]: https://github.com/rust-lang/rustfmt/
+[serde]: https://github.com/serde-rs/serde
+[sp]: https://en.wikipedia.org/wiki/System_programming
+[Rust]: https://www.rust-lang.org/
