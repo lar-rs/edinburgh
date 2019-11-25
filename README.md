@@ -1,13 +1,14 @@
 #  `edinburgh`
 
- **📦  LAR edinburgh sensors driver rewrite in [🦀 **Rust**](https://github.com/lar-rs/edinburgh)**
+**📦  LAR edinburgh sensors driver rewrite in [🦀 **Rust**](https://github.com/lar-rs/edinburgh)**
 
 🚧 _Work In Progress_ 🚧
 
 [![travis build Status](https://travis-ci.com/lar-rs/sensors.svg?branch=master)](https://travis-ci.com/lar-rs/edinburgh)
 [![builds.sr.ht status](https://builds.sr.ht/~asmolkov/sensors/.build.yml.svg)](https://builds.sr.ht/~asmolkov/lar-rs/edinburgh.build.yml?)
-[![open issue]][issue]
+![open issue][issue]
 ![Minimum Rust Version][min-rust-badge]
+
 
 ## Hardwarehersteller
  * [sensirion](https://www.sensirion.com/de)
@@ -40,11 +41,8 @@
 [file issues]: https://github.com/lar-rs/edinburgh/issues/
 [Rust]: https://www.rust-lang.org/
 [async-std]:https://docs.rs/async-std/0.99.10/async_std
-
 [edinburg]:https://edinburghsensors.com/products/oem-co2-sensor/gascard-ng/
-
 [CONTRIBUTING.md]: CONTRIBUTING.md
-
 [CC-BY 4.0]: https://opendefinition.org/licenses/cc-by/
 [MIT]: https://opensource.org/licenses/MIT
 [The Rust Book]: https://doc.rust-lang.org/book/
