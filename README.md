@@ -1,14 +1,17 @@
-#  🧰 `sensors`
+#  `edinburgh`
 
- **📦  LAR sensors collection [🦀 **Rust**](https://github.com/lar-rs/sensors)**
+ **📦  LAR edinburgh sensors driver rewrite in [🦀 **Rust**](https://github.com/lar-rs/edinburgh)**
 
 🚧 _Work In Progress_ 🚧
 
-[![travis build Status](https://travis-ci.com/lar-rs/sensors.svg?branch=master)](https://travis-ci.com/lar-rs/larsensors)
-[![builds.sr.ht status](https://builds.sr.ht/~asmolkov/sensors/.build.yml.svg)](https://builds.sr.ht/~asmolkov/lar-rs/sensors.build.yml?)
+[![travis build Status](https://travis-ci.com/lar-rs/sensors.svg?branch=master)](https://travis-ci.com/lar-rs/edinburgh)
+[![builds.sr.ht status](https://builds.sr.ht/~asmolkov/sensors/.build.yml.svg)](https://builds.sr.ht/~asmolkov/lar-rs/edinburgh.build.yml?)
 [![open issue]][issue]
 ![Minimum Rust Version][min-rust-badge]
 
+## Hardwarehersteller
+ * [sensirion](https://www.sensirion.com/de)
+    * [CO2](https://www.sensirion.com/de/umweltsensoren/kohlendioxidsensoren-co2)
 
 ## Project Description
 
@@ -20,14 +23,13 @@
 
 ## 🎙️ Commands
 
-`edinburgh` is a CLI tool and controller
+`edinburgh` is a CLI tool and controller not yet.
 
-  - ### 🦀⚙️ `serve`
+  - ⚙️ `serve`
     run driver and bind directory to wath data.
     All of the arguments and flags to this command are optional:
-        - `path`: working directory default to`/var/run/automata/mio/edinburgh`
 
-  - ### 🔧 `setup`
+  - 🔧 `setup`
       Configure kopfmodul for user.
 
     ```
@@ -35,7 +37,7 @@
     ```
 
 <!-- links -->
-[file issues]: https://github.com/lar-rs/sensors/issues/
+[file issues]: https://github.com/lar-rs/edinburgh/issues/
 [Rust]: https://www.rust-lang.org/
 [async-std]:https://docs.rs/async-std/0.99.10/async_std
 
@@ -59,3 +61,7 @@
 [serde]: https://github.com/serde-rs/serde
 [sp]: https://en.wikipedia.org/wiki/System_programming
 [Rust]: https://www.rust-lang.org/
+<!-- Badges -->
+[irc]:          https://webirc.hackint.org/#irc://irc.hackint.org/#lar
+[issue]: https://img.shields.io/github/issues/lar-rs/edinburgh?style=flat-square
+[min-rust-badge]: https://img.shields.io/badge/rustc-1.38+-blue.svg
