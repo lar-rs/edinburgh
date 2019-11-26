@@ -1,4 +1,4 @@
-#  `edinburgh`
+# :electric_plug: `edinburgh`
 
 **📦  LAR edinburgh sensors driver rewrite in [🦀 **Rust**](https://github.com/lar-rs/edinburgh)**
 
@@ -20,11 +20,9 @@
 
 ## Software Documentation
 
-
-
 ## 🎙️ Commands
 
-`edinburgh` is a CLI tool and controller not yet.
+`edinburgh` noch nicht implementiert
 
   - ⚙️ `serve`
     run driver and bind directory to wath data.
