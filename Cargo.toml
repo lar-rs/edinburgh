@@ -1,33 +1,78 @@
 [package]
 name = "edinburgh"
-version = "0.1.0"
 authors = ["Sascha Smolkov <sascha.smolkov@gmail.com>"]
-edition = "2018"
-description = "LAR edinburgh sensors"
-keywords = ["sensor","ndir","co2","airflow","humidity","pressure"]
 categories = ["linux", "automatic", "sensor"]
-repository = "https://github.com/lar-rs/sensors"
-readme = "README.md"
+description = "LAR process water analyzers edinburgh sensor cli"
+edition = "2018"
+keywords = ["sensor", "ndir", "co2", "edinburgh"]
 license = "Apache-2.0 OR MIT"
-
-
-[badges]
-maintenance = { status = "experimental" }
-travis-ci = { repository = "lar-rs/edinburg", branch = "master"}
+readme = "README.md"
+repository = "https://github.com/lar-rs/edinburgh"
+version = "0.1.0"
 
 [build-dependencies]
 autocfg = "0.1"
-# [features]
-# default = ["onlinux"]
-# onlinux = ["async-std","futures-preview","ansi_term"]
+cc = "1.0"
+cfg-if = "0.1.10"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
-byteorder = { version = "1", default-features = false }
-num-traits = { version = "0.2", default-features = false }
-doc-comment = "0.3"
-embedded-hal = "0.2"
-nb = "0.1"
+### cli|args
+structopt = { version = "0.3", features = [ "paw" ] }
+paw = "1.0"
+clap_flags= "0.4.0"
+
+# cli|communication|check
+# atty = "0.2.13"
+
+# cli|fine|terminal
+ansi_term = "0.12.1"
+yansi = "0.5.0"
+
+## error|managment
+failure = "0.1.6"
+exitfailure = "0.5.1"
+human-panic = "1.0.1"
+
+## log
+log = "0.4.8"
+femme = "1.3.0"
+
+# configuration|serialize
+toml = "0.5.5"
+
+# time|date
+chrono = "0.4.10"
+
+## value|bit
+bitvec = "0.15.2"
+nom = "5.0.1"
+regex= "1.3.1"
+## Serealizers
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+bincode = "1.2.0"
+serde_json = "1.0.42"
+### driver|hardware
+
+### channels|async|net|static
+crossbeam = "0.7.3"
+lazy_static = "1.4.0"
+# futures-preview = {version = "0.3.0-alpha.19", features = ["async-await"], optional = true }
+# surf = { git = "https://github.com/rustasync/surf.git" }
+
+### protocol|jsonrpc
+notify = "4.0.14"
+ctrlc = "3.1.3"
+# nom = "5.0.1"
+# bytes = "0.4.12"
+# serial = "0.4.0"
+# futures-preview = { version = "0.3.0-alpha.19", optional = true, features = [ "async-await"] }
+
+embedded-hal = { version = "0.2.3", features = ["unproven"] }
+nb = "0.1.2"
+byteorder = "1.3.2"
+dirs = "2.0.2"
+mio = { git = "https://github.com/lar-rs/mio.git" }
+can = { git = "https://github.com/lar-rs/can.git" }
 
 [dev-dependencies]
 embedded-hal-mock = "0.7"

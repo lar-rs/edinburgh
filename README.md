@@ -13,8 +13,18 @@
 ## Hardwarehersteller
  * [sensirion](https://www.sensirion.com/de)
     * [CO2](https://www.sensirion.com/de/umweltsensoren/kohlendioxidsensoren-co2)
+**Gascard NG**
 
+Infrared Gas Sensor
+The Gascard NG infrared gas sensor is designed for ease of integration with a wide range of gas detection systems that require high quality, accurate and reliable measurement of CO, CO2, CH4 gas concentrations.
+It includes real-time temperature and atmospheric pressure correction via on-board sensors and has the flexibility to incorporate additional gas detection technologies. It has onboard true RS232 communications along with the option of TCP/IP communications protocol.
+All orders are shipped with free logging software information on a USB key. You will simply need to purchase a cable.
+j
 ## Project Description
+
+Data example:
+  **Data  "N 0.0414 0.0000 0.0000 0.00 0.0000 22942 992.6";**
+  **Regex::new(r"N (?P<fsr>\d{1}.\d{4}) \d{1}.\d{4} \d{1}.\d{4} \d{1}.\d{2} \d{1}.\d{4} (?P<dig>\d{5}) (?P<ppm>\d{1}.\d{4}) \d{1}").unwrap()**
 
 ## Background
 
@@ -24,7 +34,7 @@
 
 `edinburgh` noch nicht implementiert
 
-  - ⚙️ `serve`
+  - ⚙️ `cwhhserve`
     run driver and bind directory to wath data.
     All of the arguments and flags to this command are optional:
 
