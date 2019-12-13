@@ -41,3 +41,4 @@ pub mod config;
 pub mod banner;
 pub mod cli;
 pub mod driver;
+pub mod edinburg;

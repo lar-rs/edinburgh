@@ -19,8 +19,3 @@ impl Default for Config {
         }
     }
 }
-
-// use std::collections::HashSet;
-pub enum Model  {
-    Edinburg500,
-}
